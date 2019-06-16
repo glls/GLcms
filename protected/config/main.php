@@ -6,7 +6,7 @@
         'application.components.*'
     ],
 
-    'modules' => require __DIR__ . DIRECTORY_SEPARATOR . 'modules.php',
+    'modules' => include_once __DIR__ . DIRECTORY_SEPARATOR . 'modules.php',
 
     'components' => [
         'db' => [
@@ -32,10 +32,14 @@
         'urlManager'   => [
             'class'          => 'application.components.CMSUrlManager',
             'urlFormat'      => 'path',
-            'showScriptName' => false
+            'showScriptName' => false,
+            'rules'          => [
+                'gii'                               => 'gii',
+                'gii/<controller:\w+>'              => 'gii/<controller>',
+                'gii/<controller:\w+>/<action:\w+>' => 'gii/<controller>/<action>'
+            ]
         ],
-
-        'log' => [
+        'log'          => [
             'class'  => 'CLogRouter',
             'routes' => [
                 [

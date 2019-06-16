@@ -1,0 +1,28 @@
+{
+  "name": "glls/glcms",
+  "description": "GLcms - CMS with Yii Framework",
+  "license": "MIT",
+  "type": "project",
+  "keywords": [
+    "yii",
+    "LSM",
+    "CMS"
+  ],
+  "authors": [
+    {
+      "name": "George Litos",
+      "email": "georgelitos@gmail.com",
+      "homepage": "https://www.georgelitos.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "repositories": [
+  ],
+  "require": {
+    "php": ">=5.6",
+    "yiisoft/yii": "1.1.14",
+    "ircmaxell/password-compat": "1.0.3",
+    "hybridauth/hybridauth": "2.*",
+    "sendgrid/sendgrid": "2.0.4"
+  }
+}

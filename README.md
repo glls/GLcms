@@ -1,5 +1,5 @@
 # GLcms 
-A CMS written with the Yii Framework from scratch 
+A CMS written with the Yii Framework `v1.1.21` from scratch 
 
 
 ## Installation

@@ -33,11 +33,6 @@
             'class'          => 'application.components.CMSUrlManager',
             'urlFormat'      => 'path',
             'showScriptName' => false,
-            'rules'          => [
-                'gii'                               => 'gii',
-                'gii/<controller:\w+>'              => 'gii/<controller>',
-                'gii/<controller:\w+>/<action:\w+>' => 'gii/<controller>/<action>'
-            ]
         ],
         'log'          => [
             'class'  => 'CLogRouter',

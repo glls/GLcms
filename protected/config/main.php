@@ -6,7 +6,14 @@
         'application.components.*'
     ],
 
-    'modules' => include_once __DIR__ . DIRECTORY_SEPARATOR . 'modules.php',
+    'modules' => array_merge([
+        'gii' => [
+            'class'     => 'system.gii.GiiModule',
+            'password'  => false,
+            'ipFilters' => ['locahost', $_SERVER['REMOTE_ADDR']]
+
+        ],
+    ], include_once __DIR__ . DIRECTORY_SEPARATOR . 'modules.php'),
 
     'components' => [
         'db' => [

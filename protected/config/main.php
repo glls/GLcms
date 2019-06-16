@@ -53,7 +53,7 @@
 
     'params' => [
         'includes' => require __DIR__ . '/params.php',
-        'debug'    => false,
+        'debug'    => true,
         'trace'    => 3
     ]
 ];

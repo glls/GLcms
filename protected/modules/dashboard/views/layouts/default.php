@@ -9,13 +9,13 @@
 
     <?php Yii::app()->clientScript
         ->registerMetaTag('text/html; charset=UTF-8', 'Content-Type')
-        ->registerCssFile('//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css')
-        ->registerCssFile('//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css')
+        ->registerCssFile('//stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css')
+        ->registerCssFile('//stackpath.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css')
         ->registerCssFile('//fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700')
         ->registerCssFile(Yii::app()->baseUrl . '/css/main.css')
         ->registerCssFile($this->getAsset() . '/dashboard.css')
         ->registerScriptFile('//code.jquery.com/jquery.js')
-        ->registerScriptFile('//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js')
+        ->registerScriptFile('//stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js')
         ->registerScriptFile('//cdnjs.cloudflare.com/ajax/libs/moment.js/2.6.0/moment.min.js')
         ->registerScriptFile('//cdnjs.cloudflare.com/ajax/libs/livestamp/1.1.2/livestamp.min.js');
     ?>
@@ -35,6 +35,8 @@
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
+                <li><a class="navbar-brand" href="/"><?php echo CHtml::encode(Yii::app()->name); ?></a></li>
+                <li><?php echo CHtml::link('My Profile', $this->createUrl('//user/index')); ?></li>
                 <li><?php echo CHtml::link('Logout', $this->createUrl('/site/logout')); ?></li
             </ul>
         </div>

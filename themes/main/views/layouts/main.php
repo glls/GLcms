@@ -22,7 +22,6 @@
             <div class="container">
                 <div class="navbar-header">
                     <a class="navbar-brand" href="/"><?php echo CHtml::encode(Yii::app()->name); ?></a>
-
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav navbar-right">
@@ -56,5 +55,6 @@
         </div>
     </div>
 </div>
+
 </body>
 </html>

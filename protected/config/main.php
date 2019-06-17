@@ -16,7 +16,7 @@
     ], include_once __DIR__ . DIRECTORY_SEPARATOR . 'modules.php'),
 
     'components' => [
-        'db' => [
+        'db'           => [
             'class'                 => 'CDbConnection',
             'connectionString'      => 'mysql:host=mysql;dbname=glclms',
             'emulatePrepare'        => true,
@@ -26,7 +26,9 @@
             'schemaCachingDuration' => '3600',
             'enableProfiling'       => true,
         ],
-
+        'request'      => [
+            'enableCsrfValidation' => true,
+        ],
         'errorHandler' => [
             'errorAction' => 'site/error',
         ],

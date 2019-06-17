@@ -5,6 +5,7 @@ class File
 
     /**
      * @param string $path
+     * @return bool
      */
     public function save($path)
     {

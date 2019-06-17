@@ -15,6 +15,11 @@ class FileUploader
 
     private $file;
 
+    /**
+     * FileUploader constructor.
+     * @param array $allowedExtensions
+     * @param int $sizeLimit
+     */
     function __construct(array $allowedExtensions = [], $sizeLimit = 10485760)
     {
         $allowedExtensions = array_map("strtolower", $allowedExtensions);
@@ -46,6 +51,7 @@ class FileUploader
 
     /**
      * @param string $str
+     * @return int|string
      */
     private function toBytes($str)
     {
@@ -65,6 +71,7 @@ class FileUploader
     /**
      * Returns array('success'=>true) or array('error'=>'error message')
      * @param string $uploadDirectory
+     * @return array
      */
     public function handleUpload($uploadDirectory, $replaceOldFile = false)
     {

@@ -38,3 +38,18 @@ php protected/yiic.php migrate
 * `runtime`: Contains temporarily generated files
 * `tests`: Contains test scripts
 * `views`: Contains controller view and layout files
+
+## Documentation
+
+### Features
+* [dashboard](http://glcms.test/dashboard) (admin panel)
+* user registration, password, forget, auth, reset, activate
+* [Yii Code Generator Gii](http://glcms.test/gii) 
+* caching (Redis)
+* access to database
+    * Active Record
+    * Query builder
+    * SQL (DAO)
+* hybrid login (twitter)
+* bootstrap 3 theming
+* unit tests
